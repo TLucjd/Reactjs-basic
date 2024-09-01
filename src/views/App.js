@@ -1,11 +1,10 @@
 import "./App.scss"
-import MyComponent from "../components/MyComponent";
+import Header from "../components/Header/Header";
 
 const App = () => {
   return (
     <div className="app-container">
-      Welcome to React
-      <MyComponent />
+      <Header />
     </div>
   );
 };
