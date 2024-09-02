@@ -2,15 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./views/App";
 import reportWebVitals from "./reportWebVitals";
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Admin from "./components/Admin/Admin";
+import User from "./components/User/User";
 
 ReactDOM.render(
-  <React.StrictMode>
-      <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route path="users" element={<User />} />
+        <Route path="admins" element={<Admin />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
