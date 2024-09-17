@@ -9,12 +9,12 @@ import store from "./redux/reducer/store";
 
 
 ReactDOM.render(
-  // <Provider store={store}>
+  //<Provider store={store}>
   <BrowserRouter>
     <Layout />
   </BrowserRouter>,
   document.getElementById("root")
-
+  //</Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
