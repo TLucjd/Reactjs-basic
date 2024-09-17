@@ -8,13 +8,23 @@ import Layout from "./Layout";
 import store from "./redux/reducer/store";
 
 
+<<<<<<< HEAD
 ReactDOM.render(
   //<Provider store={store}>
+=======
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  // <Provider store={store}>
+>>>>>>> 7a840231c9ab74af8562ed23229bc61ada5474d5
   <BrowserRouter>
     <Layout />
   </BrowserRouter>,
   document.getElementById("root")
+<<<<<<< HEAD
   //</Provider>
+=======
+  // </Provider>
+>>>>>>> 7a840231c9ab74af8562ed23229bc61ada5474d5
 );
 
 // If you want to start measuring performance in your app, pass a function
